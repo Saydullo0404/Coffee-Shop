@@ -37,6 +37,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6381D51B28C1CD4100A9056F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		63B9D93128BF7262000B63FE = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				63B9D95628BF962E000B63FE /* Resource */,
-				63B9D95428BF95F0000B63FE /* Model */,
+				6381D51B28C1CD4100A9056F /* Model */,
 				63B9D95528BF9604000B63FE /* Views VS ViewModels */,
 				63B9D94328BF7262000B63FE /* Main.storyboard */,
 				63B9D94628BF7264000B63FE /* Assets.xcassets */,
@@ -65,13 +72,6 @@
 				63B9D94B28BF7264000B63FE /* Info.plist */,
 			);
 			path = "Coffee Shop";
-			sourceTree = "<group>";
-		};
-		63B9D95428BF95F0000B63FE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		63B9D95528BF9604000B63FE /* Views VS ViewModels */ = {
