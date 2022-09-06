@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="JAz-3Q-SpN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JAz-3Q-SpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i8t-6v-wNI"/>
+                            <constraint firstItem="JAz-3Q-SpN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jUr-b4-QYu"/>
+                            <constraint firstItem="JAz-3Q-SpN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="svl-3z-MV1"/>
+                            <constraint firstAttribute="bottom" secondItem="JAz-3Q-SpN" secondAttribute="bottom" id="uX1-ip-QvS"/>
+                            <constraint firstItem="JAz-3Q-SpN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="v7i-Xp-e76"/>
+                            <constraint firstItem="JAz-3Q-SpN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zdW-lX-2Oi"/>
+                        </constraints>
+
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,6 +40,9 @@
         </scene>
     </scenes>
     <resources>
+
+        <image name="Splash" width="375" height="812"/>
+
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

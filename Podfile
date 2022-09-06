@@ -6,5 +6,8 @@ target 'Coffee Shop' do
   use_frameworks!
 
   # Pods for Coffee Shop
-pod'SnapKit'
+
+pod "FlagPhoneNumber"
+pod 'IQKeyboardManagerSwift'
+
 end
