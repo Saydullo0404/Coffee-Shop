@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Coffee Shop
 //
-//  Created by Saydullo on 31/08/22.
+//  Created by Muhammadqodir on 31/08/22.
 //
 
 import UIKit
