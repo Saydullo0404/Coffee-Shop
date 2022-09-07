@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		11382A5BD7E0C162B53824F6 /* Pods_Coffee_Shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E31E3AF7616F2D5FC24165 /* Pods_Coffee_Shop.framework */; };
-
 		63B9D93E28BF7262000B63FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D93D28BF7262000B63FE /* AppDelegate.swift */; };
 		63B9D94028BF7262000B63FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D93F28BF7262000B63FE /* SceneDelegate.swift */; };
 		63B9D94228BF7262000B63FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B9D94128BF7262000B63FE /* ViewController.swift */; };
 		63B9D94528BF7262000B63FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B9D94328BF7262000B63FE /* Main.storyboard */; };
 		63B9D94728BF7264000B63FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B9D94628BF7264000B63FE /* Assets.xcassets */; };
 		63B9D94A28BF7264000B63FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B9D94828BF7264000B63FE /* LaunchScreen.storyboard */; };
+		63BD83D828C8D2700062126F /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD83D728C8D2700062126F /* AppTextField.swift */; };
+		63BD83DA28C8D2850062126F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD83D928C8D2850062126F /* UIColor.swift */; };
+		63BD83DC28C8D2970062126F /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD83DB28C8D2970062126F /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		63B9D94628BF7264000B63FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B9D94928BF7264000B63FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B9D94B28BF7264000B63FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
+		63BD83D728C8D2700062126F /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		63BD83D928C8D2850062126F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		63BD83DB28C8D2970062126F /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		7723C00E5B8D222544422990 /* Pods-Coffee Shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee Shop.release.xcconfig"; path = "Target Support Files/Pods-Coffee Shop/Pods-Coffee Shop.release.xcconfig"; sourceTree = "<group>"; };
 		C7E31E3AF7616F2D5FC24165 /* Pods_Coffee_Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,43 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				11382A5BD7E0C162B53824F6 /* Pods_Coffee_Shop.framework in Frameworks */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
 		19BFFA4FF8CBE50A9AD794B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C7E31E3AF7616F2D5FC24165 /* Pods_Coffee_Shop.framework */,
-
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-
-		6381D51B28C1CD4100A9056F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-
 		63B9D93128BF7262000B63FE = {
 			isa = PBXGroup;
 			children = (
 				63B9D93C28BF7262000B63FE /* Coffee Shop */,
 				63B9D93B28BF7262000B63FE /* Products */,
-
 				6DC9DA114EBFC4D1633127C1 /* Pods */,
 				19BFFA4FF8CBE50A9AD794B4 /* Frameworks */,
-
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +77,9 @@
 		63B9D93C28BF7262000B63FE /* Coffee Shop */ = {
 			isa = PBXGroup;
 			children = (
+				63BD83D628C8D25E0062126F /* Extensions */,
 				63B9D95628BF962E000B63FE /* Resource */,
-				6381D51B28C1CD4100A9056F /* Model */,
+				63D1243328C8555800C20E42 /* Model */,
 				63B9D95528BF9604000B63FE /* Views VS ViewModels */,
 				63B9D94328BF7262000B63FE /* Main.storyboard */,
 				63B9D94628BF7264000B63FE /* Assets.xcassets */,
@@ -118,15 +106,29 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-
+		63BD83D628C8D25E0062126F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63BD83D728C8D2700062126F /* AppTextField.swift */,
+				63BD83D928C8D2850062126F /* UIColor.swift */,
+				63BD83DB28C8D2970062126F /* Label.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63D1243328C8555800C20E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6DC9DA114EBFC4D1633127C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				185977B6455677EFE56468EE /* Pods-Coffee Shop.debug.xcconfig */,
 				7723C00E5B8D222544422990 /* Pods-Coffee Shop.release.xcconfig */,
-
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,13 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63B9D94E28BF7264000B63FE /* Build configuration list for PBXNativeTarget "Coffee Shop" */;
 			buildPhases = (
-
 				E29492D7BF9A5F439F86CF62 /* [CP] Check Pods Manifest.lock */,
 				63B9D93628BF7262000B63FE /* Sources */,
 				63B9D93728BF7262000B63FE /* Frameworks */,
 				63B9D93828BF7262000B63FE /* Resources */,
 				AED1259DBF68D1A03AEE56CE /* [CP] Embed Pods Frameworks */,
-
 			);
 			buildRules = (
 			);
@@ -179,8 +179,8 @@
 			);
 			mainGroup = 63B9D93128BF7262000B63FE;
 			packageReferences = (
-				6381D51E28C3153F00A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber.git" */,
-				6381D51F28C3156500A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber.git" */,
+				6381D51E28C3153F00A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber" */,
+				6381D51F28C3156500A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber" */,
 			);
 			productRefGroup = 63B9D93B28BF7262000B63FE /* Products */;
 			projectDirPath = "";
@@ -205,9 +205,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-
 		AED1259DBF68D1A03AEE56CE /* [CP] Embed Pods Frameworks */ = {
-
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,9 +222,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffee Shop/Pods-Coffee Shop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-
 		E29492D7BF9A5F439F86CF62 /* [CP] Check Pods Manifest.lock */ = {
-
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +253,10 @@
 			files = (
 				63B9D94228BF7262000B63FE /* ViewController.swift in Sources */,
 				63B9D93E28BF7262000B63FE /* AppDelegate.swift in Sources */,
+				63BD83DC28C8D2970062126F /* Label.swift in Sources */,
 				63B9D94028BF7262000B63FE /* SceneDelegate.swift in Sources */,
+				63BD83D828C8D2700062126F /* AppTextField.swift in Sources */,
+				63BD83DA28C8D2850062126F /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +398,7 @@
 		};
 		63B9D94F28BF7264000B63FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-
 			baseConfigurationReference = 185977B6455677EFE56468EE /* Pods-Coffee Shop.debug.xcconfig */;
-
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,9 +426,7 @@
 		};
 		63B9D95028BF7264000B63FE /* Release */ = {
 			isa = XCBuildConfiguration;
-
 			baseConfigurationReference = 7723C00E5B8D222544422990 /* Pods-Coffee Shop.release.xcconfig */;
-
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,7 +476,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6381D51E28C3153F00A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber.git" */ = {
+		6381D51E28C3153F00A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/chronotruck/FlagPhoneNumber.git";
 			requirement = {
@@ -489,7 +484,7 @@
 				minimumVersion = 0.8.0;
 			};
 		};
-		6381D51F28C3156500A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber.git" */ = {
+		6381D51F28C3156500A9056F /* XCRemoteSwiftPackageReference "FlagPhoneNumber" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/chronotruck/FlagPhoneNumber.git";
 			requirement = {
