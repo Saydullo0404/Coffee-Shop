@@ -9,5 +9,5 @@ target 'Coffee Shop' do
 
 pod "FlagPhoneNumber"
 pod 'IQKeyboardManagerSwift'
-
+pod'SnapKit'
 end
